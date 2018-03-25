@@ -44,9 +44,9 @@ BOOST_PYTHON_MODULE(gnp)
         .def_readwrite("data_source_mutation_rate", &GNPConfig::data_source_mutation_rate)
         .def_readwrite("judgement_function_mutation_rate", &GNPConfig::judgement_function_mutation_rate)
         .def_readwrite("output_mutation_rate", &GNPConfig::output_mutation_rate)
-        .def_readwrite("time_limit", &GNPConfig::time_limit)
-        .def_readwrite("delay_time_processing_node", &GNPConfig::delay_time_processing_node)
-        .def_readwrite("delay_time_judgement_node", &GNPConfig::delay_time_judgement_node);
+        .def_readonly("time_limit", &GNPConfig::time_limit)
+        .def_readonly("delay_time_processing_node", &GNPConfig::delay_time_processing_node)
+        .def_readonly("delay_time_judgement_node", &GNPConfig::delay_time_judgement_node);
 
     py::class_<Genome>("Genome")
         .def("configure_new", &Genome::configure_new_py)
