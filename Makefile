@@ -3,13 +3,13 @@
 BUILD_TYPE := RELEASE
 
 # If enable multi thread, set to TRUE.
-# ENABLE_OPENMP=TRUE
+# ENABLE_OPENMP := TRUE
 
 # If enable multi thread, set to the number of threads.
-# OMP_NUM_THREADS=16
+# OMP_NUM_THREADS := 16
 
 # If use double precision floating point, set to TRUE.
-# GNP_USE_DOUBLE_PRECISION=TRUE
+# GNP_USE_DOUBLE_PRECISION := TRUE
 
 # Write the C++ 'Eigen' library path.
 EIGEN_PATH := ~/eigen/
