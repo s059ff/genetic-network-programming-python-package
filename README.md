@@ -33,5 +33,4 @@ BUILD_TYPEにRELEASEを設定します。
 * OpenMPによるマルチスレッドを有効にする場合
 ENABLE_OPENMPにTRUEを設定し、OMP_NUM_THREADSにスレッド数(16など)を指定します。
 * 倍精度浮動小数点数を使用する場合
-# GNP_USE_DOUBLE_PRECISION=TRUE  
-のコメントアウトを外します。
+GNP_USE_DOUBLE_PRECISIONにTRUEを設定します。
