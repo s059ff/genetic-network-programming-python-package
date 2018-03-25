@@ -39,15 +39,15 @@ GNP_USE_DOUBLE_PRECISIONにTRUEを設定します。
 
 ## サンプルプログラム
 examples/にサンプルプログラムがあります。
-* classification-iris
+* classification-iris  
 Irisデータセットを使ってクラス分類を行います。
 main.pyを実行すると、results/に結果が出力されます。
-* regression-abalone
+* regression-abalone  
 abaloneデータセットを使って回帰分析を行います。  
 main.pyを実行すると、results/に結果が出力されます。(精度は悪いです)
-* serialization
+* serialization  
 GenomeとPopulationのシリアライゼーション・デシリアライゼーションのテストを行います。  
 main.pyを実行し、OKと表示されることを確認してください。
-* visualization
+* visualization  
 Genomeの可視化テストを行います。
 main.pyを実行し、dotファイルとpngファイルが出力されることを確認してください。
