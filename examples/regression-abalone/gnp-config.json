@@ -1,0 +1,73 @@
+{
+    "input_attributes": [
+        {
+            "name": "sex",
+            "typename": "category",
+            "labels": ["male", "female", "infant"]
+        },
+        {
+            "name": "length",
+            "typename": "numeric",
+            "min": 0.075,
+            "max": 0.815
+        },
+        {
+            "name": "diameter",
+            "typename": "numeric",
+            "min": 0.055,
+            "max": 0.650
+        },
+        {
+            "name": "height",
+            "typename": "numeric",
+            "min": 0.000,
+            "max": 1.130
+        },
+        {
+            "name": "whole weight",
+            "typename": "numeric",
+            "min": 0.002,
+            "max": 2.826
+        },
+        {
+            "name": "shucked weight",
+            "typename": "numeric",
+            "min": 0.001,
+            "max": 1.488
+        },
+        {
+            "name": "viscera weight",
+            "typename": "numeric",
+            "min": 0.001,
+            "max": 0.760
+        },
+        {
+            "name": "shell weight",
+            "typename": "numeric",
+            "min": 0.002,
+            "max": 1.005
+        }
+    ],
+    "output_attributes": [
+        {
+            "name": "rings",
+            "typename": "numeric",
+            "min": 1,
+            "max": 29
+        }
+    ],
+    "num_genomes": 200,
+    "num_elites": 1,
+    "num_category_judgement_nodes": 5,
+    "num_numeric_judgement_nodes": 20,
+    "num_processing_nodes": 10,
+    "num_branches": 3,
+    "crossover_rate": 0.4,
+    "branch_mutation_rate": 0.01,
+    "data_source_mutation_rate": 0.01,
+    "judgement_function_mutation_rate": 0.01,
+    "output_mutation_rate": 0.01,
+    "time_limit": 10.0,
+    "delay_time_processing_node": 10.0,
+    "delay_time_judgement_node": 1.0
+}
