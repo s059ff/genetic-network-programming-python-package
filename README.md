@@ -17,9 +17,9 @@
 
 ## ビルド方法
 Makefileの以下の点を環境に合わせて修正します。  
-EIGEN_PATH := ('Eigen'をインストールしたディレクトリ)  
-PICOJSON_PATH := (''picojson'をインストールしたディレクトリ)  
-ANACONDA_PATH := ('Anaconda'をインストールしたディレクトリ)  
+* EIGEN_PATH := ('Eigen'をインストールしたディレクトリ)  
+* PICOJSON_PATH := (''picojson'をインストールしたディレクトリ)  
+* ANACONDA_PATH := ('Anaconda'をインストールしたディレクトリ)  
 EIGEN_PATH/Eigen/...  
 PICOJSON_PATH/picojson.h  
 ANACONDA_PATH/bin/...  
