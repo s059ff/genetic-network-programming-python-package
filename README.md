@@ -10,14 +10,16 @@
 
 ## 外部ライブラリ
 外部ライブラリとして、
+* C++ <--> Pythonの 相互変換に必要 'boost'
 * 数値計算ライブラリ 'Eigen'
 * JSONパーサライブラリ 'picojson'
 
 を必要とします。  
-これらのライブラリはHeader-onlyなライブラリであるため、ビルドする必要はありません。
 
 ## ビルド方法
-Makefileの以下の点を環境に合わせて修正します。
+1. 'Eigen'と'picojson'をインターネットからダウンロードして、適当なディレクトリに配置します。
+2. ターミナルで`conda install boost`を実行します。Anacondaに'boost'がインストールされます。
+3. Makefileの以下の点を環境に合わせて修正します。
 * EIGEN_PATH := ('Eigen'をインストールしたディレクトリ)
 * PICOJSON_PATH := (''picojson'をインストールしたディレクトリ)
 * ANACONDA_PATH := ('Anaconda'をインストールしたディレクトリ)
@@ -27,6 +29,8 @@ EIGEN_PATH/Eigen/...
 PICOJSON_PATH/picojson.h  
 ANACONDA_PATH/bin/...  
 となるようにしてください。  
+4. ターミナルでgenetic-network-programming-python-package/に移動して、make を実行します。  
+gnp.soが出力されます。
 
 以下の設定はオプションです。
 * 最適化を有効にする場合  
